@@ -1,0 +1,82 @@
+.header {
+    background-color: #4CAF50; /* Цвет фона для хедера */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-title {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .list-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .new-list-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .create-list-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .create-list-button:hover {
+    background-color: #e64a19;
+  }
+  
+  .list-selector {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .list-button {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Закругленные края */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+  }
+  
+  .list-button:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05); /* Увеличение при наведении */
+  }
+  
+  .list-button.active {
+    background-color: #388E3C;
+    color: white;
+    transform: scale(1.1); /* Увеличение активной кнопки */
+  }
+  
+  .delete-list-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .delete-list-button:hover {
+    background-color: #c9302c;
+  }
