@@ -1,5 +1,5 @@
 .header {
-    background-color: #4CAF50; /* Цвет фона для хедера */
+    background-color: #4CAF50; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -48,23 +48,23 @@
     color: #333;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px; /* Закругленные края */
+    border-radius: 20px; 
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   
   .list-button:hover {
     background-color: #4CAF50;
     color: white;
-    transform: scale(1.05); /* Увеличение при наведении */
+    transform: scale(1.05);
   }
   
   .list-button.active {
     background-color: #388E3C;
     color: white;
-    transform: scale(1.1); /* Увеличение активной кнопки */
+    transform: scale(1.1);
   }
   
   .delete-list-button {

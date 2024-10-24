@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import './TodoList.css';
 
 const TodoList = ({ todos, deleteTodo, toggleComplete, editTodo }) => {
-  const [editTaskId, setEditTaskId] = useState(null); // ID задачи, которую редактируем
-  const [newTaskText, setNewTaskText] = useState(''); // Новый текст для задачи
+  const [editTaskId, setEditTaskId] = useState(null); 
+  const [newTaskText, setNewTaskText] = useState(''); 
 
   const handleEditClick = (todo) => {
-    setEditTaskId(todo.id); // Устанавливаем задачу, которую редактируем
-    setNewTaskText(todo.task); // Устанавливаем текущий текст задачи
+    setEditTaskId(todo.id); 
+    setNewTaskText(todo.task); 
   };
 
   const handleSaveEdit = (id) => {
-    editTodo(id, newTaskText); // Сохраняем новые данные задачи
-    setEditTaskId(null); // Выходим из режима редактирования
+    editTodo(id, newTaskText); 
+    setEditTaskId(null); 
   };
 
   return (

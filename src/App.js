@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import Header from './components/Header';
-import './App.css'; // Стили для App
+import './App.css'; 
 
 const App = () => {
   const [lists, setLists] = useState([{ id: 1, name: 'Список задач', todos: [] }]);
@@ -22,7 +22,7 @@ const App = () => {
   }, [lists]);
 
   const addTodo = (todo) => {
-    if (!currentListId) return; // Добавляем проверку, чтобы задачи добавлялись только при выбранном списке
+    if (!currentListId) return; 
     setLists(lists.map((list) =>
       list.id === currentListId ? { ...list, todos: [...list.todos, todo] } : list
     ));
@@ -92,7 +92,7 @@ const App = () => {
           <h2 className="current-list-title">
             Текущий список: {lists.find((list) => list.id === currentListId)?.name}
           </h2>
-          <TodoForm addTodo={addTodo} /> {/* Форма добавления задачи */}
+          <TodoForm addTodo={addTodo} /> 
           <TodoList
             todos={lists.find((list) => list.id === currentListId)?.todos}
             deleteTodo={deleteTodo}
@@ -108,3 +108,4 @@ const App = () => {
 };
 
 export default App;
+

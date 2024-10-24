@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TodoItem.css'; // Импортируйте стили для TodoItem
+import './TodoItem.css'; 
 
 const TodoItem = ({ todo, deleteTodo, editTodo, toggleTodoCompletion }) => {
   const [isEditing, setIsEditing] = useState(false);

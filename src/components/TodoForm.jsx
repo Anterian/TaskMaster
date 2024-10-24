@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './TodoForm.css'; // Стили для формы
+import './TodoForm.css'; 
 
 const TodoForm = ({ addTodo }) => {
   const [task, setTask] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!task) return; // Проверка на пустую задачу
+    if (!task) return; 
     addTodo({ id: Date.now(), task, completed: false });
-    setTask(''); // Очистка поля после добавления
+    setTask(''); 
   };
 
   return (
